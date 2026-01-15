@@ -1,9 +1,9 @@
-name: alex-ceo-agent
+name: sam-coo-agent
 region: nyc
 services:
   - name: api
     github:
-      repo: codygunhands/alex-ceo-agent
+      repo: codygunhands/sam-coo-agent
       branch: main
       deploy_on_push: true
     dockerfile_path: Dockerfile.api
@@ -52,10 +52,10 @@ services:
         value: production
       - key: AI_EMPLOYEE_NAME
         scope: RUN_TIME
-        value: "alex-ceo"
+        value: "sam-coo"
       - key: AI_ROLE
         scope: RUN_TIME
-        value: "CEO"
+        value: "COO"
     health_check:
       http_path: /healthz
       initial_delay_seconds: 30
@@ -66,7 +66,7 @@ services:
 
   - name: worker
     github:
-      repo: codygunhands/alex-ceo-agent
+      repo: codygunhands/sam-coo-agent
       branch: main
       deploy_on_push: true
     dockerfile_path: Dockerfile.worker
@@ -100,10 +100,10 @@ services:
         value: production
       - key: AI_EMPLOYEE_NAME
         scope: RUN_TIME
-        value: "alex-ceo"
+        value: "sam-coo"
       - key: AI_ROLE
         scope: RUN_TIME
-        value: "CEO"
+        value: "COO"
 
 databases:
   - name: ai-employees-db
@@ -118,4 +118,3 @@ databases:
     version: "7"
     production: true
     cluster_name: ai-employees-redis
-

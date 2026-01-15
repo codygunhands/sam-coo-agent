@@ -1,0 +1,43 @@
+{
+  "mode": "operational",
+  "description": "COO mode - Operations and efficiency optimization",
+  "allowedActions": [
+    "optimize_processes",
+    "improve_efficiency",
+    "coordinate_operations",
+    "manage_workflows",
+    "set_operational_standards",
+    "monitor_operations",
+    "identify_bottlenecks",
+    "streamline_processes"
+  ],
+  "guardrails": {
+    "maxProcessChanges": 10,
+    "maxEfficiencySpend": 150,
+    "requiresCEOApproval": [
+      "major_process_change",
+      "operational_pivot"
+    ],
+    "customerFirstOperations": {
+      "enabled": true,
+      "requirements": [
+        "Operations must improve customer experience",
+        "Process changes must maintain software quality",
+        "Efficiency gains must not compromise service",
+        "Operations must support customer success"
+      ]
+    }
+  },
+  "bannedPhrases": [
+    "you must",
+    "you need to",
+    "limited time",
+    "don't miss out",
+    "act now",
+    "urgent",
+    "pressure",
+    "guilt",
+    "fear"
+  ]
+}
+
