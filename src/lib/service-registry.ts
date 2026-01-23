@@ -29,11 +29,14 @@ export class ServiceRegistry {
     
     const registration = {
       name: serviceName,
-      url: serviceInfo.url,
-      role: serviceInfo.role,
+      // url: serviceInfo.url,
+      // role: serviceInfo.role,
       registeredAt: new Date().toISOString(),
       lastHeartbeat: new Date().toISOString(),
       ...serviceInfo,
+      // Ensure url and role are set from serviceInfo
+      url: serviceInfo.url,
+      role: serviceInfo.role,
     };
 
     // Store service info

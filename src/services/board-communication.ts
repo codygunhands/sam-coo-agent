@@ -23,7 +23,7 @@ const BOARD_MEMBERS: Record<string, BoardMember> = {
     url: null, // Will be fetched dynamically
     apiKey: process.env.INTERNAL_API_KEY || process.env.API_KEY || '',
   },
-  'sam-coo': {
+  'finley-cfo': {
     name: 'Finley',
     id: 'e6fcf4df-4ad8-4676-b902-f4c750c2b741',
     url: null,
